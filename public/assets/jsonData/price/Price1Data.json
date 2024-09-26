@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "activeClass": "",
+    "title": "10 Time Pass",
+    "planCurrency": "$",
+    "planPrice": "19.99",
+    "btnText": "GET STARTED",
+    "btnClass": "btn-dark",
+    "listData": [
+      {
+        "id": 1,
+
+        "listData": "Each"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "activeClass": "",
+    "title": "5 Time Pass",
+
+    "planCurrency": "$",
+    "planPrice": "24.99",
+    "btnText": "GET STARTED",
+    "btnClass": "btn-dark",
+    "listData": [
+      {
+        "id": 1,
+
+        "listData": "Each"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "activeClass": "active",
+    "title": "1 Time Pass",
+    "planCurrency": "$",
+    "planPrice": "29.99",
+    "planType": "/ Monthly",
+    "btnText": "GET STARTED",
+    "btnClass": "btn-theme active-btn",
+    "listData": [
+      {
+        "id": 1,
+
+        "listData": "Each"
+      }
+    ]
+  }
+]

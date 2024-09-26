@@ -1,0 +1,134 @@
+.table-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.custom-table thead {
+  background-color: #242831;
+  color: white;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.balance {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: #242831;
+  border: 1px solid #d4edda;
+  border-radius: 2px;
+  padding: 25px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.view-details-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 27px;
+  padding: 2px 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s;
+}
+
+.view-details-button::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: transform 0.5s;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 0;
+}
+
+.view-details-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.view-details-button:hover {
+  color: white;
+}
+
+.view-details-button:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background */
+  backdrop-filter: blur(5px); /* Add a blur effect */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 30px; /* Increased padding for more space */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  width: 90%; /* Responsive width */
+  max-width: 600px; /* Max width for larger screens */
+  height: auto; /* Allow height to adjust based on content */
+  overflow-y: auto; /* Enable scrolling for tall content */
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: color 0.2s; /* Smooth color transition */
+}
+
+.close:hover,
+.close:focus {
+  color: #ff4d4d; /* Change color on hover */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Additional styling for modal content */
+.modal-content h2 {
+  margin-top: 0; /* Remove top margin for the header */
+  color: #333; /* Darker color for the title */
+}
+
+.modal-content p {
+  margin: 10px 0; /* Spacing between paragraphs */
+  line-height: 1.5; /* Increased line height for readability */
+  color: #555; /* Lighter color for text */
+}
